@@ -1,0 +1,148 @@
+* {
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+  box-sizing: border-box;
+}
+#src1 {
+  width:100vw;
+  height:600px;
+  position:absolute;
+  top:1000px;
+  left:0;
+  z-index:-1;
+  display: none;
+}
+body {
+  
+}
+#backImg {
+  position:absolute;
+  width:100vw;
+
+  opacity: 0.4;
+  z-index:-55;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.3rem 1rem;
+  outline: 0px solid green;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+header h4 {
+  color:green;
+  
+}
+nav {
+  outline:1px solid red;
+  border-radius: 5px;
+  padding:0.2rem;
+  position:relative;
+}
+nav ul {
+  transition: 0.5s ease;
+  border-radius: 5px;
+  overflow:hidden;
+  position:absolute;
+}
+nav ul li {
+  list-style: none;
+  padding:0.4rem 0.5rem;
+  opacity:0;
+  background-color:teal;
+}
+nav:hover ul li {
+  opacity:1;
+}
+nav ul li a {
+  text-decoration: none;
+  color:#fff;
+}
+nav ul li:hover a {
+  font-weight:bolder
+}
+header button {
+  color:red;
+  margin-left: auto;
+}
+main {
+  display: flex;
+}
+#allBoxes {
+  outline: 0px solid red;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#allBoxes .outerBox {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin: 1rem 1rem;
+  border-radius: 15px;
+  outline: 0px solid salmon;
+}
+.outerBox:hover .outerBox {
+  
+}
+.outerBox .box {
+  outline: 0px groove rgb(14, 110, 294);
+  padding:0.4rem 0.4rem;
+  background: linear-gradient(to right, salmon, rgb(207, 56, 81));
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  flex: 0 1 0;
+  gap: 0.5rem;
+  text-align: center;
+  border-radius: 15px;
+  
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 10px hsl(0, 0%, 0%);
+}
+.outerBox:hover .box {
+  
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px hsl(0, 0%, 0%);
+  background-color: rgb(14, 110, 294);
+  color: #fff;
+}
+.outerBox .box .logo {
+  width: clamp(12vmin, 15vmin, 17vmin);
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+}
+.outerBox .box .title {
+
+}
+.outerBox .box .line {
+  height:3px;
+  width:30%;
+  background-color: peru;
+}
+.outerBox .box .description {
+
+}
+
+
+#sideBar {
+  border:2px ridge peru;
+  flex-basis: 25%;
+  display:none;
+}
+#sideBar h3 {
+
+}
+#sideBar p {
+
+}
